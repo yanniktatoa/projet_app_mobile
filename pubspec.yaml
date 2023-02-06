@@ -44,7 +44,8 @@ dependencies:
   delayed_display: ^2.0.0
   delayed_widget: ^1.1.1
   flutter_inset_box_shadow: ^1.0.8
-
+  http: ^0.13.5
+  flutter_dotenv: ^5.0.2
 
 dev_dependencies:
   flutter_test:
@@ -70,7 +71,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/logo.jpg
+    - images/122.png
+    - images/icone.png
     - lottie/93792-isometric-delivery-box.json
     - lottie/125895-blue-open-and-close-folder.json
     - lottie/lf30_editor_s1rdfv3l.json

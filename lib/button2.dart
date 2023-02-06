@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:projet_iai/detailLivraison.dart';
 import 'package:projet_iai/homepage.dart';
+import 'package:projet_iai/livraison.dart';
+import 'package:projet_iai/models.dart';
 
 class Boutton2 extends StatelessWidget {
   final Function()? onTap;
@@ -13,7 +16,9 @@ class Boutton2 extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Homepage(),
+                builder: (context) => Details(
+                  detailLivraison: detailLivraison,
+                ),
               ));
         },
         child: Container(

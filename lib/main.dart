@@ -20,7 +20,7 @@ class Splashscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
       splash: Lottie.asset('lottie/93792-isometric-delivery-box.json'),
-      backgroundColor: Colors.red.shade400,
+      backgroundColor: Color.fromARGB(160, 29, 10, 199),
       nextScreen: LoginPage(),
       splashIconSize: 250,
       duration: 3000,
@@ -43,9 +43,9 @@ class LoginPage extends StatelessWidget {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomLeft,
                   colors: [
-                Color.fromARGB(255, 134, 4, 130),
-                Color.fromARGB(255, 245, 26, 26),
-                Color(0xFFF27121),
+                Color.fromARGB(253, 250, 103, 4),
+                Color.fromARGB(255, 132, 133, 197),
+                Color.fromARGB(206, 2, 26, 2),
               ])),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -118,7 +118,7 @@ class LoginPage extends StatelessWidget {
                           Text(
                             'Mot de passe oublié?',
                             style: TextStyle(
-                                color: Color.fromARGB(255, 252, 125, 27)),
+                                color: Color.fromARGB(255, 27, 14, 3)),
                           )
                         ],
                       ),
@@ -141,9 +141,9 @@ class LoginPage extends StatelessWidget {
                                 begin: Alignment.centerLeft,
                                 end: Alignment.centerRight,
                                 colors: [
-                                  Color(0xFF8A2387),
-                                  Color(0xFFE94057),
-                                  Color(0xFFF27121),
+                                  Color.fromARGB(253, 250, 103, 4),
+                                  Color.fromARGB(255, 132, 133, 197),
+                                  Color.fromARGB(206, 2, 26, 2),
                                 ])),
                         child: Padding(
                           padding: EdgeInsets.all(12.0),
