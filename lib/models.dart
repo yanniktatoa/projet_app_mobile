@@ -6,4 +6,5 @@ class DetailLivraison {
   late String prenomclient;
   late String contactclient;
   late String adresseclient;
+  late String localisation;
 }

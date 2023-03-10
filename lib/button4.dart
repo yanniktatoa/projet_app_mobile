@@ -16,6 +16,7 @@ class Boutton4 extends StatelessWidget {
       child: OutlinedButton(
           onPressed: onTap,
           style: OutlinedButton.styleFrom(
+              backgroundColor: Color.fromARGB(255, 246, 245, 253),
               surfaceTintColor: Color.fromARGB(255, 44, 7, 255),
               foregroundColor: Color.fromARGB(255, 44, 7, 255),
               minimumSize: const Size(50, 50)),

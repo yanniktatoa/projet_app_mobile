@@ -51,6 +51,19 @@ dependencies:
   shared_preferences: ^2.0.17
   mysql1: ^0.20.0
   sqflite: ^2.2.4+1
+  fluttertoast: ^8.2.1
+  google_fonts: ^4.0.3
+  rxdart: ^0.27.7
+  auto_route: ^5.0.4
+  flutter_feather_icons: ^2.0.0+1
+  flat_3d_button: ^1.0.3
+  google_maps_flutter: ^2.2.5
+  google_maps_widget: ^1.0.5+1
+  url_launcher: ^6.1.10
+  geolocator: ^9.0.2
+  permission_handler: ^10.2.0
+  flutter_config: ^2.0.0
+  image_picker: ^0.8.6+4
   
 dev_dependencies:
   flutter_test:
@@ -77,12 +90,21 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - images/assets/images/
+    - images/assets/animations/ 
     - images/122.png
     - images/icone.png
+    - images/bouteille_grande_1-removebg-preview.png
+    - images/bouteille_moyenne_1-removebg-preview.png
+    - images/sachet_eau_1-removebg-preview.png
+    - images/bouteille_grande_1.png
+    - images/bouteille_moyenne_1.png
+    - images/sachet_eau_1.png
     - lottie/93792-isometric-delivery-box.json
     - lottie/125895-blue-open-and-close-folder.json
     - lottie/lf30_editor_s1rdfv3l.json
     - lottie/lf20_eu5gscby.json
+    - lottie/group_working.json
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

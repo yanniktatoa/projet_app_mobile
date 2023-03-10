@@ -4,16 +4,19 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:lottie/lottie.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:projet_iai/homepage.dart';
+import 'package:projet_iai/log/theme_bloc.dart';
 import 'package:projet_iai/loginpage.dart';
 import 'package:projet_iai/login.dart';
+import 'package:projet_iai/route.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(primaryColor: Colors.yellow),
-    debugShowCheckedModeBanner: false,
-    home: Splashscreen(),
-    builder: EasyLoading.init(),
-  ));
+      theme: ThemeData(primaryColor: Colors.yellow),
+      debugShowCheckedModeBanner: false,
+      home: Splashscreen(),
+      builder: EasyLoading.init(),
+      initialRoute: Routes.login,
+      routes: Routes.routes));
 }
 
 class Splashscreen extends StatelessWidget {
@@ -24,7 +27,9 @@ class Splashscreen extends StatelessWidget {
     return AnimatedSplashScreen(
       splash: Lottie.asset('lottie/93792-isometric-delivery-box.json'),
       backgroundColor: Color.fromARGB(160, 29, 10, 199),
-      nextScreen: LoginPage(),
+      nextScreen: Loginpage(
+        themeBloc: (ThemeBloc()),
+      ),
       splashIconSize: 250,
       duration: 3000,
       splashTransition: SplashTransition.sizeTransition,

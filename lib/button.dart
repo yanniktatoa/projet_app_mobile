@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projet_iai/delivy.dart';
 import 'package:projet_iai/homepage.dart';
 import 'package:projet_iai/livraison.dart';
 
@@ -14,7 +15,7 @@ class Boutton extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Formulaire(),
+                builder: (context) => Product(),
               ));
         },
         child: Container(
